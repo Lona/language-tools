@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`complex pattern nested optional with value 1`] = `
+Object {
+  "genericArguments": Array [
+    Object {
+      "type": "Type",
+    },
+    Object {
+      "type": "Type",
+    },
+  ],
+  "name": "name",
+}
+`;
+
+exports[`complex pattern nested optional without value 1`] = `
+Object {
+  "name": "name",
+}
+`;
+
+exports[`shapes or shapes case 0 1`] = `
+Object {
+  "a": Object {
+    "type": "0",
+    "value": Object {
+      "b": "hello",
+    },
+  },
+}
+`;
+
+exports[`shapes or shapes case 1 1`] = `
+Object {
+  "a": Object {
+    "type": "1",
+    "value": Object {
+      "c": "world",
+    },
+  },
+}
+`;

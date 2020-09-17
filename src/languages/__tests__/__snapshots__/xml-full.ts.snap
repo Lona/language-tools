@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XML Language with tokens element parses element 1`] = `
+Object {
+  "attributes": Array [
+    Object {
+      "name": "attr",
+      "value": "val",
+    },
+  ],
+  "content": Array [],
+  "tag": "el",
+}
+`;
+
+exports[`XML Language with tokens element parses nested elements 1`] = `
+Object {
+  "attributes": Array [],
+  "content": Array [
+    Object {
+      "type": "comment",
+      "value": "com",
+    },
+    Object {
+      "type": "charData",
+      "value": "cd",
+    },
+  ],
+  "tag": "el",
+}
+`;
+
+exports[`XML Language with tokens element parses self-closing 1`] = `
+Object {
+  "attributes": Array [
+    Object {
+      "name": "attr",
+      "value": "val",
+    },
+  ],
+  "content": Array [],
+  "tag": "el",
+}
+`;

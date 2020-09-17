@@ -1,0 +1,44 @@
+{
+  "name": "language-tools",
+  "version": "0.0.1",
+  "description": "A system for lexing, parsing, serialization, and type generation.",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib && tsc --declaration",
+    "build:watch": "rm -rf ./lib && tsc --declaration --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": "https://github.com/lona/language-tools",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.0.5",
+    "tree-visit": "^0.0.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.3",
+    "@types/node": "^13.7.6",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.2"
+  },
+  "prettier": {
+    "proseWrap": "never",
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "semi": false
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "lib"
+    ]
+  }
+}

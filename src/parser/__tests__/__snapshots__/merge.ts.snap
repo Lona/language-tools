@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parser parses consume 1`] = `
+Object {
+  "id": "0",
+  "match": "hello",
+  "type": "consume",
+  "value": "hello",
+}
+`;
+
+exports[`Parser parses many 1`] = `
+Object {
+  "id": "1",
+  "match": Array [
+    Object {
+      "id": "0",
+      "match": "hello",
+      "type": "consume",
+      "value": "hello",
+    },
+    Object {
+      "id": "0",
+      "match": "hello",
+      "type": "consume",
+      "value": "hello",
+    },
+  ],
+  "matchSeparator": Array [],
+  "type": "many",
+  "value": Object {
+    "id": "0",
+    "type": "consume",
+    "value": "hello",
+  },
+}
+`;
+
+exports[`Parser parses option 1`] = `
+Object {
+  "id": "1",
+  "match": Object {
+    "id": "0",
+    "match": "hello",
+    "type": "consume",
+    "value": "hello",
+  },
+  "type": "option",
+  "value": Object {
+    "id": "0",
+    "type": "consume",
+    "value": "hello",
+  },
+}
+`;
+
+exports[`Parser parses option 2 1`] = `
+Object {
+  "id": "1",
+  "match": undefined,
+  "type": "option",
+  "value": Object {
+    "id": "0",
+    "type": "consume",
+    "value": "hello",
+  },
+}
+`;
+
+exports[`Parser parses or 1`] = `
+Object {
+  "id": "2",
+  "match": Object {
+    "id": "0",
+    "match": "hello",
+    "type": "consume",
+    "value": "hello",
+  },
+  "matchIndex": 0,
+  "parallel": false,
+  "type": "or",
+  "value": Array [
+    Object {
+      "id": "0",
+      "type": "consume",
+      "value": "hello",
+    },
+    Object {
+      "id": "1",
+      "type": "consume",
+      "value": "world",
+    },
+  ],
+}
+`;
+
+exports[`Parser parses or 2 1`] = `
+Object {
+  "id": "2",
+  "match": Object {
+    "id": "1",
+    "match": "world",
+    "type": "consume",
+    "value": "world",
+  },
+  "matchIndex": 1,
+  "parallel": false,
+  "type": "or",
+  "value": Array [
+    Object {
+      "id": "0",
+      "type": "consume",
+      "value": "hello",
+    },
+    Object {
+      "id": "1",
+      "type": "consume",
+      "value": "world",
+    },
+  ],
+}
+`;
+
+exports[`Parser parses sequence 1`] = `
+Object {
+  "id": "2",
+  "match": Array [
+    Object {
+      "id": "0",
+      "match": "hello",
+      "type": "consume",
+      "value": "hello",
+    },
+    Object {
+      "id": "1",
+      "match": "world",
+      "type": "consume",
+      "value": "world",
+    },
+  ],
+  "type": "sequence",
+  "value": Array [
+    Object {
+      "id": "0",
+      "type": "consume",
+      "value": "hello",
+    },
+    Object {
+      "id": "1",
+      "type": "consume",
+      "value": "world",
+    },
+  ],
+}
+`;
+
+exports[`Parser parses thunk 1`] = `
+Object {
+  "id": "0",
+  "match": Object {
+    "id": "2",
+    "match": "hello",
+    "type": "consume",
+    "value": "hello",
+  },
+  "type": "thunk",
+  "value": [Function],
+}
+`;
+
+exports[`Parser parses thunk 2`] = `
+Object {
+  "id": "0",
+  "match": Object {
+    "id": "2",
+    "match": "hello",
+    "type": "consume",
+    "value": "hello",
+  },
+  "type": "thunk",
+  "value": [Function],
+}
+`;

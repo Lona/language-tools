@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`XML Language element parses element 1`] = `
+Object {
+  "attributes": Array [
+    Object {
+      "name": "name",
+      "value": "string",
+    },
+  ],
+  "content": Object {
+    "type": "open",
+    "value": Object {
+      "closingTag": "name",
+      "content": Array [],
+    },
+  },
+  "tag": "name",
+}
+`;
+
+exports[`XML Language element parses nested elements 1`] = `
+Object {
+  "attributes": Array [],
+  "content": Object {
+    "type": "open",
+    "value": Object {
+      "closingTag": "name",
+      "content": Array [
+        Object {
+          "type": "comment",
+          "value": "comment",
+        },
+        Object {
+          "type": "charData",
+          "value": "charData",
+        },
+      ],
+    },
+  },
+  "tag": "name",
+}
+`;
+
+exports[`XML Language element parses self-closing 1`] = `
+Object {
+  "attributes": Array [
+    Object {
+      "name": "name",
+      "value": "string",
+    },
+  ],
+  "content": Object {
+    "type": "selfClosing",
+    "value": null,
+  },
+  "tag": "name",
+}
+`;
+
+exports[`XML Language parses element content 1`] = `
+Object {
+  "type": "comment",
+  "value": "comment",
+}
+`;

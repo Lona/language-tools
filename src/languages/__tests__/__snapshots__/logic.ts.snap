@@ -1,0 +1,873 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logic Language parses array literal 1`] = `
+Object {
+  "body": Array [],
+}
+`;
+
+exports[`Logic Language parses array literal 2`] = `
+Object {
+  "body": Array [
+    Object {
+      "type": "literalExpression",
+      "value": Object {
+        "type": "number",
+        "value": Object {
+          "type": "integer",
+          "value": "1",
+        },
+      },
+    },
+    Object {
+      "type": "literalExpression",
+      "value": Object {
+        "type": "number",
+        "value": Object {
+          "type": "integer",
+          "value": "2",
+        },
+      },
+    },
+    Object {
+      "type": "literalExpression",
+      "value": Object {
+        "type": "number",
+        "value": Object {
+          "type": "integer",
+          "value": "3",
+        },
+      },
+    },
+  ],
+}
+`;
+
+exports[`Logic Language parses boolean literal 1`] = `
+Object {
+  "type": "true",
+  "value": null,
+}
+`;
+
+exports[`Logic Language parses boolean literal 2`] = `
+Object {
+  "type": "false",
+  "value": null,
+}
+`;
+
+exports[`Logic Language parses declaration 1`] = `
+Object {
+  "type": "variableDeclaration",
+  "value": Object {
+    "annotation": Object {
+      "genericArguments": Array [],
+      "value": "Number",
+    },
+    "attributes": Array [],
+    "initializer": Object {
+      "type": "identifierExpression",
+      "value": Object {
+        "value": "x",
+      },
+    },
+    "name": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses declaration 2`] = `
+Object {
+  "type": "structDeclaration",
+  "value": Object {
+    "attributes": Array [],
+    "body": Array [],
+    "generics": Array [],
+    "name": Object {
+      "value": "Foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses declaration 3`] = `
+Object {
+  "type": "enumDeclaration",
+  "value": Object {
+    "attributes": Array [],
+    "body": Array [],
+    "generics": Array [],
+    "name": Object {
+      "value": "Foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses enums 1`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses enums 2`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [
+    Object {
+      "associatedValues": Array [],
+      "name": Object {
+        "value": "a",
+      },
+    },
+  ],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses enums 3`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [
+    Object {
+      "associatedValues": Array [
+        Object {
+          "annotation": Object {
+            "genericArguments": Array [],
+            "value": "Number",
+          },
+          "label": Object {
+            "value": "param",
+          },
+        },
+      ],
+      "name": Object {
+        "value": "a",
+      },
+    },
+  ],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses enums 4`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [
+    Object {
+      "associatedValues": Array [
+        Object {
+          "annotation": Object {
+            "genericArguments": Array [],
+            "value": "Number",
+          },
+        },
+      ],
+      "name": Object {
+        "value": "a",
+      },
+    },
+  ],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses expressions 1`] = `
+Object {
+  "type": "identifierExpression",
+  "value": Object {
+    "value": "x",
+  },
+}
+`;
+
+exports[`Logic Language parses expressions 2`] = `
+Object {
+  "type": "literalExpression",
+  "value": Object {
+    "type": "number",
+    "value": Object {
+      "type": "integer",
+      "value": "1",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses expressions 3`] = `
+Object {
+  "type": "literalExpression",
+  "value": Object {
+    "type": "array",
+    "value": Object {
+      "body": Array [
+        Object {
+          "type": "literalExpression",
+          "value": Object {
+            "type": "number",
+            "value": Object {
+              "type": "integer",
+              "value": "1",
+            },
+          },
+        },
+        Object {
+          "type": "literalExpression",
+          "value": Object {
+            "type": "number",
+            "value": Object {
+              "type": "integer",
+              "value": "2",
+            },
+          },
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses expressions 4`] = `
+Object {
+  "type": "functionCallExpression",
+  "value": Object {
+    "arguments": Array [],
+    "expression": Object {
+      "type": "identifierExpression",
+      "value": Object {
+        "value": "foo",
+      },
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses expressions 5`] = `
+Object {
+  "type": "memberExpression",
+  "value": Object {
+    "expression": Object {
+      "type": "identifierExpression",
+      "value": Object {
+        "value": "foo",
+      },
+    },
+    "member": Object {
+      "type": "identifierExpression",
+      "value": Object {
+        "value": "bar",
+      },
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function call argument 1`] = `
+Object {
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "b",
+    },
+  },
+  "label": Object {
+    "value": "a",
+  },
+}
+`;
+
+exports[`Logic Language parses function call argument 2`] = `
+Object {
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "a",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function calls 1`] = `
+Object {
+  "arguments": Array [],
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function calls 2`] = `
+Object {
+  "arguments": Array [
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "a",
+        },
+      },
+    },
+  ],
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function calls 3`] = `
+Object {
+  "arguments": Array [
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "a",
+        },
+      },
+    },
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "b",
+        },
+      },
+    },
+  ],
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function calls 4`] = `
+Object {
+  "arguments": Array [
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "b",
+        },
+      },
+      "label": Object {
+        "value": "a",
+      },
+    },
+  ],
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function calls 5`] = `
+Object {
+  "arguments": Array [
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "b",
+        },
+      },
+      "label": Object {
+        "value": "a",
+      },
+    },
+    Object {
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "d",
+        },
+      },
+      "label": Object {
+        "value": "c",
+      },
+    },
+  ],
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses function declaration 1`] = `
+Object {
+  "arguments": Array [],
+  "attributes": Array [],
+  "generics": Array [],
+  "name": Object {
+    "value": "foo",
+  },
+  "returnType": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+}
+`;
+
+exports[`Logic Language parses function declaration 2`] = `
+Object {
+  "arguments": Array [
+    Object {
+      "annotation": Object {
+        "genericArguments": Array [],
+        "value": "b",
+      },
+      "name": Object {
+        "value": "a",
+      },
+    },
+    Object {
+      "annotation": Object {
+        "genericArguments": Array [],
+        "value": "d",
+      },
+      "name": Object {
+        "value": "c",
+      },
+    },
+  ],
+  "attributes": Array [],
+  "generics": Array [],
+  "name": Object {
+    "value": "foo",
+  },
+  "returnType": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+}
+`;
+
+exports[`Logic Language parses function declaration 3`] = `
+Object {
+  "arguments": Array [],
+  "attributes": Array [],
+  "generics": Array [
+    Object {
+      "value": "A",
+    },
+  ],
+  "name": Object {
+    "value": "foo",
+  },
+  "returnType": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+}
+`;
+
+exports[`Logic Language parses function declaration 4`] = `
+Object {
+  "arguments": Array [],
+  "attributes": Array [],
+  "generics": Array [
+    Object {
+      "value": "A",
+    },
+    Object {
+      "value": "B",
+    },
+  ],
+  "name": Object {
+    "value": "foo",
+  },
+  "returnType": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+}
+`;
+
+exports[`Logic Language parses identifier expression 1`] = `
+Object {
+  "value": "x",
+}
+`;
+
+exports[`Logic Language parses import declaration 1`] = `
+Object {
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses literal expression 1`] = `
+Object {
+  "type": "number",
+  "value": Object {
+    "type": "integer",
+    "value": "1",
+  },
+}
+`;
+
+exports[`Logic Language parses literal expression 2`] = `
+Object {
+  "type": "boolean",
+  "value": Object {
+    "type": "true",
+    "value": null,
+  },
+}
+`;
+
+exports[`Logic Language parses member expressions 1`] = `
+Object {
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+  "member": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "bar",
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses member expressions 2`] = `
+Object {
+  "expression": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "foo",
+    },
+  },
+  "member": Object {
+    "type": "functionCallExpression",
+    "value": Object {
+      "arguments": Array [],
+      "expression": Object {
+        "type": "identifierExpression",
+        "value": Object {
+          "value": "bar",
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Logic Language parses number literal 1`] = `
+Object {
+  "type": "float",
+  "value": "1.0",
+}
+`;
+
+exports[`Logic Language parses number literal 2`] = `
+Object {
+  "type": "integer",
+  "value": "1",
+}
+`;
+
+exports[`Logic Language parses program 1`] = `
+Object {
+  "declarations": Array [
+    Object {
+      "type": "variableDeclaration",
+      "value": Object {
+        "annotation": Object {
+          "genericArguments": Array [],
+          "value": "Number",
+        },
+        "attributes": Array [],
+        "initializer": Object {
+          "type": "identifierExpression",
+          "value": Object {
+            "value": "x",
+          },
+        },
+        "name": Object {
+          "value": "foo",
+        },
+      },
+    },
+    Object {
+      "type": "structDeclaration",
+      "value": Object {
+        "attributes": Array [],
+        "body": Array [],
+        "generics": Array [],
+        "name": Object {
+          "value": "Foo",
+        },
+      },
+    },
+  ],
+}
+`;
+
+exports[`Logic Language parses string literal 1`] = `
+Object {
+  "value": "abc",
+}
+`;
+
+exports[`Logic Language parses string literal 2`] = `
+Object {
+  "value": "",
+}
+`;
+
+exports[`Logic Language parses structs 1`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses structs 2`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [
+    Object {
+      "type": "variableDeclaration",
+      "value": Object {
+        "annotation": Object {
+          "genericArguments": Array [],
+          "value": "Number",
+        },
+        "attributes": Array [],
+        "initializer": Object {
+          "type": "identifierExpression",
+          "value": Object {
+            "value": "x",
+          },
+        },
+        "name": Object {
+          "value": "foo",
+        },
+      },
+    },
+  ],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses structs 3`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [
+    Object {
+      "type": "variableDeclaration",
+      "value": Object {
+        "annotation": Object {
+          "genericArguments": Array [],
+          "value": "Number",
+        },
+        "attributes": Array [],
+        "initializer": Object {
+          "type": "identifierExpression",
+          "value": Object {
+            "value": "x",
+          },
+        },
+        "name": Object {
+          "value": "foo",
+        },
+      },
+    },
+    Object {
+      "type": "variableDeclaration",
+      "value": Object {
+        "annotation": Object {
+          "genericArguments": Array [],
+          "value": "String",
+        },
+        "attributes": Array [],
+        "initializer": Object {
+          "type": "identifierExpression",
+          "value": Object {
+            "value": "y",
+          },
+        },
+        "name": Object {
+          "value": "bar",
+        },
+      },
+    },
+  ],
+  "generics": Array [],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses structs 4`] = `
+Object {
+  "attributes": Array [],
+  "body": Array [],
+  "generics": Array [
+    Object {
+      "value": "A",
+    },
+  ],
+  "name": Object {
+    "value": "Foo",
+  },
+}
+`;
+
+exports[`Logic Language parses variable declaration 1`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [],
+  "initializer": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "x",
+    },
+  },
+  "name": Object {
+    "value": "foo",
+  },
+}
+`;
+
+exports[`Logic Language parses variable declaration 2`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [],
+  "initializer": Object {
+    "type": "literalExpression",
+    "value": Object {
+      "type": "number",
+      "value": Object {
+        "type": "integer",
+        "value": "1",
+      },
+    },
+  },
+  "name": Object {
+    "value": "foo",
+  },
+}
+`;
+
+exports[`Logic Language parses variable declaration 3`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [
+    Object {
+      "value": "attr",
+    },
+  ],
+  "initializer": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "x",
+    },
+  },
+  "name": Object {
+    "value": "foo",
+  },
+}
+`;
+
+exports[`Logic Language parses variable declaration 4`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [
+    Object {
+      "value": "attr1",
+    },
+    Object {
+      "value": "attr2",
+    },
+  ],
+  "initializer": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "x",
+    },
+  },
+  "name": Object {
+    "value": "foo",
+  },
+}
+`;
+
+exports[`Logic Language parses variable declaration 5`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [],
+  "comment": Object {
+    "comment": " comment ",
+  },
+  "initializer": Object {
+    "type": "identifierExpression",
+    "value": Object {
+      "value": "x",
+    },
+  },
+  "name": Object {
+    "value": "foo",
+  },
+}
+`;
