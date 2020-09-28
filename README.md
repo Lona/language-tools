@@ -29,13 +29,13 @@ As an additional goal, all lexer/grammar/ast definitions should be JSON serializ
 ## Installation
 
 ```bash
-npm install --save @lona/language-tools
+npm install --save language-tools
 ```
 
 OR
 
 ```bash
-yarn add @lona/language-tools
+yarn add language-tools
 ```
 
 ## Usage
