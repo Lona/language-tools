@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logic Templates generates a node 1`] = `
+Object {
+  "annotation": Object {
+    "genericArguments": Array [],
+    "value": "Number",
+  },
+  "attributes": Array [],
+  "initializer": Object {
+    "type": "literalExpression",
+    "value": Object {
+      "type": "number",
+      "value": Object {
+        "type": "integer",
+        "value": "1",
+      },
+    },
+  },
+  "name": Object {
+    "value": "x",
+  },
+}
+`;
