@@ -3,7 +3,6 @@ import { Parser, ParserPattern } from '../parser/Parser'
 import { Shaper } from '../shaper/Shaper'
 import { Lexer } from '../lexer/Lexer'
 import { Token } from '../lexer/types'
-import { lexer } from '../languages/logic'
 
 interface TemplateOptions<TokenShape, OrShape> {
   lexer: Lexer
@@ -31,7 +30,7 @@ type Templates<Shape> = {
 export function createTemplates<TokenShape, OrShape>(
   options: TemplateOptions<TokenShape, OrShape>
 ): Templates<TokenShape | OrShape> {
-  const { printer, parser, shaper, patterns } = options
+  const { printer, parser, shaper, patterns, lexer } = options
 
   function createString(
     strings: TemplateStringsArray,
