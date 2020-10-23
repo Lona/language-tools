@@ -1,6 +1,6 @@
 {
   "name": "language-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A system for lexing, parsing, serialization, and type generation.",
   "main": "lib/index.js",
   "files": [

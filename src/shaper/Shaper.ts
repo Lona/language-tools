@@ -1,5 +1,4 @@
 import { ParserMatch, ParserPattern } from '../parser/Parser'
-import { assert } from 'console'
 import { inspect, isDeepStrictEqual } from 'util'
 import { Parse } from '../parser/types'
 
@@ -128,10 +127,10 @@ export class Shaper<Token, TokenShape, OrShape = OrValue> {
     ): T {
       if (as === '.') return container as T
 
-      assert(
-        as in container,
-        `expected '${as}' in container: ${inspect(container)}`
-      )
+      // assert(
+      //   as in container,
+      //   `expected '${as}' in container: ${inspect(container)}`
+      // )
 
       return (container as { [key: string]: T })[as]
     }
